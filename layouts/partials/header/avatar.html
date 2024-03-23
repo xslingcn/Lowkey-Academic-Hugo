@@ -1,0 +1,24 @@
+{{ $avatar := resources.GetMatch .Site.Params.avatar }} 
+{{ $tiny := ($avatar.Fill "80x80 q90") }}
+{{ $small := ($avatar.Fill "160x160 q90") }}
+{{ $medium := ($avatar.Fill "320x320 q90") }}
+{{ $large := ($avatar.Fill "640x640 q90") }}
+
+<div class="flex-none w-48 h-48 rounded-full overflow-hidden">
+  <a href="{{ .Site.BaseURL }}">
+    <img
+      srcset="{{- with $tiny.RelPermalink -}}{{.}} 80w, {{- end -}}
+              {{- with $small.RelPermalink -}}{{.}} 160w, {{- end -}}
+              {{- with $medium.RelPermalink -}}{{.}} 320w, {{- end -}}
+              {{- with $large.RelPermalink -}}{{.}} 640w, {{- end -}}"
+      sizes="(max-width: 79px) 80px,
+             (max-width: 159px) 160px,
+             (max-width: 319px) 320px,
+             640px"
+      src="{{ $avatar.RelPermalink }}"
+      width="{{ $avatar.Width }}"
+      height="{{ $avatar.Height }}"
+      alt="{{ .Site.Title }}"
+    />
+  </a>
+</div>

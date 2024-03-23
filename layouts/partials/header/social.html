@@ -1,0 +1,14 @@
+<div class="order-1 sm:order-2">
+  <ul class="flex sm:justify-start gap-5">
+    {{ with site.Menus.social }}
+    {{ range . }}
+    <li>    
+      <a href="{{ .URL }}" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-{{ .Identifier }}"></i>
+          <span class="sr-only">{{ .Name }}</span>
+      </a>
+    </li>
+    {{ end }}
+    {{ end }}
+  </ul>
+</div>

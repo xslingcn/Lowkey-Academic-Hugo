@@ -1,0 +1,49 @@
+[[main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+[[main]]
+    identifier = "about"
+    name = "About me"
+    url = "/about"
+    weight = 2
+
+[[main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories"
+    weight = 3
+
+[[main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags"
+    weight = 4
+
+[[main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog"
+    weight = 5
+    
+# Social Media Configuration
+
+[[social]]
+    identifier = "x-twitter"
+    name = "X"
+    url = "#"
+    weight = 1
+
+[[social]]
+    identifier = "google-scholar"
+    name = "Google Scholar"
+    url = "#"
+    weight = 2
+
+[[social]]
+    identifier = "github"
+    name = "GitHub"
+    url = "#"
+    weight = 3
