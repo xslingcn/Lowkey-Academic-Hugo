@@ -4,10 +4,13 @@ isSinglePage = true
 # Meta Config
 description = "Hello"
 
+# Email
+email = "hi [at] example.com"
+
 # Header Configuration
 avatar = "img/profile-picture.jpg"
 
-#favicon
+# favicon
 favicon = "icons/favicon.ico"
 
 # disqus is a comment system. see https://disqus.com
