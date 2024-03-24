@@ -408,4 +408,8 @@
   .publication #resource-links a {
     @apply no-underline;
   }
+
+  .news p {
+    @apply mb-1;
+  }
 }

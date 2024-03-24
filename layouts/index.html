@@ -6,6 +6,11 @@
 
     <section>{{ .Content }} </section>
     <section>
+      {{ with .Site.GetPage "/news" }}
+        {{ partial "list/news.html" . }}
+      {{ end }}
+    </section>
+    <section>
       {{ with .Site.GetPage "/publications" }}
         {{ partial "list/selected_publications.html" . }}
       {{ end }}
