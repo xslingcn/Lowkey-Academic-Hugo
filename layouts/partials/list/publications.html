@@ -1,0 +1,21 @@
+<div class="flex flex-col gap-1">
+  <h1 class="text-2xl font-extrabold">
+    {{ if .Params.header }}
+      {{ .Params.header }}
+    {{ else }}
+      {{ .Title }}
+      {{ end }}
+    </h1>
+  
+  {{ with .Content }}
+    {{ . }}
+  {{ end }}
+</div>
+{{ range $index, $pages := .Pages }}
+    {{ if $index }}
+        <hr class="mt-4"> 
+    {{ end }}
+    {{ partial "single/publication.html" . }}
+{{ else }}
+    <p>Nothing here yet.</p>
+{{ end }}

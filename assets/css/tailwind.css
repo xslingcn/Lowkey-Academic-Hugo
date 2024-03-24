@@ -399,4 +399,13 @@
   .title-small {
     @apply text-2xl font-extrabold text-gray-900 dark:text-gray-300;
   }
+
+  .publication h3,
+  .publication p {
+    @apply mb-2;
+  }
+
+  .publication #resource-links a {
+    @apply no-underline;
+  }
 }

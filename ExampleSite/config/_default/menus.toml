@@ -31,14 +31,14 @@
 # Social Media Configuration
 
 [[social]]
-    identifier = "x-twitter"
-    name = "X"
+    identifier = "google-scholar"
+    name = "Google Scholar"
     url = "#"
     weight = 1
 
 [[social]]
-    identifier = "google-scholar"
-    name = "Google Scholar"
+    identifier = "linkedin"
+    name = "LinkedIn"
     url = "#"
     weight = 2
 
@@ -47,3 +47,9 @@
     name = "GitHub"
     url = "#"
     weight = 3
+
+[[social]]
+    identifier = "x-twitter"
+    name = "X"
+    url = "#"
+    weight = 4

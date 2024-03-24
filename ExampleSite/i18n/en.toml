@@ -1,17 +1,20 @@
 [latestPosts]
-    other = 'Latest posts'
+    other = 'Últimas publicações'
     
 [readMore]
-    other = 'Read more'
+    other = 'Ler mais'
 
 [summary]
-    other = 'Summary'
+    other = 'Sumário'
 
 [estimatedReadingTime]
-    other = 'Estimated reading time: %d minutes'
+    other = 'Tempo estimado de leitura: %d minutos'
 
 [404_title]
-    other = 'Page not found'
+    other = 'Página não encontrada'
 
 [404_text]
-    other = "Looks like you've followed a broken link or entered a URL that doesn't exist on this site."
+    other = 'Parece que você seguiu um link quebrado ou inseriu um URL que não existe neste site.'
+
+[selected_publications]
+    other = 'Publicações Seleccionadas'
