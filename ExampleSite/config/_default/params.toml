@@ -8,7 +8,7 @@ description = "Hello"
 email = "hi [at] example.com"
 
 # Header Configuration
-avatar = "img/profile-picture.jpg"
+avatar = "img/avatar.jpg"
 
 # favicon
 favicon = "icons/favicon.ico"

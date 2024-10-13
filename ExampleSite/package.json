@@ -1,21 +1,21 @@
 {
-  "name": "lowkey",
-  "author": "Nixentric",
-  "homepage": "https://github.com/nixentric/Lowkey-Hugo-Theme#readme",
+  "name": "lowkey-academic",
+  "author": "xslingcn",
+  "homepage": "https://github.com/xslingcn/Lowkey-Academic-Hugo",
   "license": "MIT",
-  "version": "1.1.0",
-  "description": "A Clean and Simple Hugo theme inspired by Adam Wathan's (https://adamwathan.me/) Website.",
+  "version": "1.0.0",
+  "description": "A Clean and Simple Hugo theme modified based on Lowkey (https://github.com/nixentric/Lowkey-Hugo-Theme) specifically for academic showcase uses.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nixentric/Lowkey-Hugo-Theme.git"
+    "url": "git+https://github.com/xslingcn/Lowkey-Academic-Hugo.git"
   },
   "keywords": ["hugo", "hugo-themes", "clean-themes"],
   "bugs": {
-    "url": "https://github.com/nixentric/Lowkey-Hugo-Theme/issues"
+    "url": "https://github.com/xslingcn/Lowkey-Academic-Hugo/issues"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
