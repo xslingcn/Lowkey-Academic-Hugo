@@ -1,6 +1,6 @@
 # Lowkey Academic
 
-![Lowkey Academic](hhttps://github.com/xslingcn/Lowkey-Academic-Hugo/blob/main/images/screenshot.png?raw=true)
+![Lowkey Academic](https://github.com/xslingcn/Lowkey-Academic-Hugo/blob/main/images/screenshot.png?raw=true)
 
 Lowkey-Academic is a Clean and Simple Hugo theme modified based on [Lowkey](https://github.com/nixentric/Lowkey-Hugo-Theme) specifically for academic showcase uses.
 
