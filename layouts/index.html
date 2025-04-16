@@ -5,14 +5,20 @@
 </div>
 
     <section>{{ .Content }} </section>
+
+    {{ if .Site.Params.displayNews }}
     <section>
       {{ with .Site.GetPage "/news" }}
         {{ partial "list/news.html" . }}
       {{ end }}
     </section>
+    {{ end }}
+
+    {{ if .Site.Params.displayPublication }}
     <section>
       {{ with .Site.GetPage "/publications" }}
         {{ partial "list/selected_publications.html" . }}
       {{ end }}
     </section>
+  {{ end }}
 {{ end }}

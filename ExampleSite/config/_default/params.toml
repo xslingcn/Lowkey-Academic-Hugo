@@ -13,6 +13,12 @@ avatar = "img/avatar.jpg"
 # favicon
 favicon = "icons/favicon.ico"
 
+# Whether to include the selected publications section in the homepage
+displayPublication = false
+
+# Whether to include the news section in the homepage
+displayNews = true
+
 # disqus is a comment system. see https://disqus.com
 disqusShortname = ""
 
