@@ -4,12 +4,14 @@
 {{ $captionPosition := .Get "caption-position" }}
 
 <figure class='mb-5'>
-  <img src="{{ $img.RelPermalink }}" {{ with $alt }} alt="{{ . }}" {{ end }} width="{{ $img.Width }}" height="{{ $img.Height }}" />
-  
+  {{ if eq $img.MediaType.SubType "svg" }}
+    <img src="{{ $img.RelPermalink }}" {{ with $alt }} alt="{{ . }}" {{ end }} />
+  {{ else }}
+    <img src="{{ $img.RelPermalink }}" {{ with $alt }} alt="{{ . }}" {{ end }} width="{{ $img.Width }}" height="{{ $img.Height }}" />
+  {{ end }}
+
   {{ with $caption }}
-    <figcaption 
-      class='{{ if eq $captionPosition "center" }} flex justify-center {{ else if eq $captionPosition "end" }} flex justify-end {{ end }}'
-    >
+    <figcaption class='w-full {{ if eq $captionPosition "center" }}flex justify-center{{ else if eq $captionPosition "end" }}flex justify-end{{ end }}'>
       {{ . }}
     </figcaption>
   {{ end }}
