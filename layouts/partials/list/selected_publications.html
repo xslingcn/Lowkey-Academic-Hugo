@@ -1,4 +1,4 @@
-<h3 class="title-small">{{ i18n "selected_publications" }}</h3>
+<h3 class="title-small">{{ i18n "selectedPublications" }}</h3>
 {{ $selectedPages := where .Pages ".Params.selected" true }}
 {{ if $selectedPages }}
     {{ range $index, $pages := .Pages }}
@@ -7,8 +7,8 @@
         {{ end }}
     {{ partial "single/publication.html" . }}
     {{ else }}
-        <p>Nothing here yet.</p>
+        <p>{{ i18n "noContent" }}</p>
     {{ end }}
 {{ else }}
-  <p>Nothing here yet.</p>
+  <p>{{ i18n "noContent" }}</p>
 {{ end }}

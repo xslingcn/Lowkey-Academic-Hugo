@@ -16,5 +16,8 @@
 [404_text]
     other = 'Parece que você seguiu um link quebrado ou inseriu um URL que não existe neste site.'
 
-[selected_publications]
+[selectedPublications]
     other = 'Publicações Seleccionadas'
+
+[noContent]
+    other = 'Nada aqui ainda.'

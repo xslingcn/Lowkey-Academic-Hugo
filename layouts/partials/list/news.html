@@ -16,6 +16,6 @@
     {{ range $index, $pages := .Pages }}
         <strong>[{{ .Date.Format "Jan, 2006" }}]</strong> {{- .Content -}}
     {{ else }}
-        <p>Nothing here yet.</p>
+        <p>{{ i18n "noContent" }}</p>
     {{ end }}
 </div>
