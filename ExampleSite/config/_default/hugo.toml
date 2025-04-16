@@ -6,8 +6,6 @@ theme = 'lowkey-academic'
 title = 'Lowkey Academic'
 enableRobotsTXT = true
 summaryLength = 15
-paginate = 5
-
 
 [markup]
   [markup.highlight]
@@ -24,3 +22,6 @@ paginate = 5
     noHl = false
     style = 'dracula'
     tabWidth = 4
+
+[pagination]
+  pagerSize = 5
