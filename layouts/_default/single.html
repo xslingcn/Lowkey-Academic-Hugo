@@ -1,16 +1,23 @@
 {{ define "main" }}
 
 <article class="flex flex-col gap-10">
-  <header class="flex flex-col gap-2">
+  <header class="flex flex-col">
     <h2 class="title-large">{{ .Title }}</h2>
 
+    {{/* Authors */}}
+    {{ with .Params.authors }}
+      <div class="authors text-sm text-gray-500 dark:text-gray-400">
+        {{ . | markdownify }}
+      </div>
+    {{ end }}
+    
     <div class="meta">
       {{/* Publish date */}}
       <time datetime="{{ .PublishDate }}" title='{{ .PublishDate.Format "Mon, Jan 2, 2006, 3:04 PM MST" }}'>
         {{ .PublishDate.Format "02/01/2006" }} - {{ printf (i18n "estimatedReadingTime") .ReadingTime }}
       </time>
 
-      {{/* Categories */}} 
+      {{/* Categories */}}
       {{ with (.GetTerms "categories") }} — 
         {{ range . }}
           <a class="categories" href="{{ .RelPermalink }}" alt="{{ .LinkTitle }}">
@@ -30,11 +37,11 @@
   <footer>
     {{ with (.GetTerms "tags") }}
       <div class="pb-14 taxonomy-list tags-list">
-      {{ range . }}
-        <a href="{{ .RelPermalink }}" alt="{{ .LinkTitle }}">
-          {{ .LinkTitle }}
-        </a>
-      {{ end }}
+        {{ range . }}
+          <a href="{{ .RelPermalink }}" alt="{{ .LinkTitle }}">
+            {{ .LinkTitle }}
+          </a>
+        {{ end }}
       </div>
     {{ end }}
   </footer>
