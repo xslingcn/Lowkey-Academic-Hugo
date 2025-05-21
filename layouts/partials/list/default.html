@@ -1,6 +1,6 @@
 <article class="flex flex-col gap-1">
   <h1>
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
+    <a href="{{ if .Params.externalUrl }}{{ .Params.externalUrl }}{{ else }}{{ .Permalink }}{{ end }}">{{ .Title }}</a>
   </h1>
   
   <span class="date">
@@ -18,7 +18,7 @@
   </div>
 
   <div class="mt-2">
-    <a class="read-more" href="{{ .Permalink }}">
+    <a class="read-more" href="{{ if .Params.externalUrl }}{{ .Params.externalUrl }}{{ else }}{{ .Permalink }}{{ end }}">
       {{ i18n "readMore" }}
       <span class="w-4 h-4 stroke-2">
         {{ partial "utils/icon" "arrow-right" }}
